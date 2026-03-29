@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "name": "Alex Morgan",
+    "email": "hire-me@anshumat.org",
+    "headline": "Full Stack Developer | React & Node.js Enthusiast",
+    "summary": "Passionate developer with 2 years of experience building scalable web applications. Strong foundation in modern JavaScript frameworks and cloud technologies.",
+    "location": "Bangalore, India",
+    "avatar_color": "#4F7CFF",
+    "skills": [
+      {
+        "name": "React",
+        "level": "Advanced",
+        "endorsed": 12
+      },
+      {
+        "name": "Node.js",
+        "level": "Intermediate",
+        "endorsed": 8
+      },
+      {
+        "name": "TypeScript",
+        "level": "Intermediate",
+        "endorsed": 6
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "Intermediate",
+        "endorsed": 4
+      },
+      {
+        "name": "AWS",
+        "level": "Beginner",
+        "endorsed": 2
+      }
+    ],
+    "experience": [
+      {
+        "company": "TechStartup Pvt Ltd",
+        "role": "Junior Frontend Developer",
+        "duration": "2023 - Present",
+        "description": "Built responsive React applications serving 50K+ users. Led migration from class to functional components.",
+        "skills_used": [
+          "React",
+          "TypeScript",
+          "Jest"
+        ]
+      },
+      {
+        "company": "Freelance",
+        "role": "Web Developer",
+        "duration": "2022 - 2023",
+        "description": "Delivered 8 client projects including e-commerce sites and dashboards.",
+        "skills_used": [
+          "React",
+          "Node.js",
+          "MongoDB"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "EduTrack LMS",
+        "description": "Full-stack learning management system with real-time progress tracking and video streaming.",
+        "tech": [
+          "React",
+          "Node.js",
+          "Socket.io",
+          "AWS S3"
+        ],
+        "link": "https://github.com/demo/edutrack"
+      },
+      {
+        "name": "BudgetAI",
+        "description": "Personal finance app using ML to categorize expenses and predict spending patterns.",
+        "tech": [
+          "React Native",
+          "Python",
+          "TensorFlow"
+        ],
+        "link": "https://github.com/demo/budgetai"
+      }
+    ],
+    "education": [
+      {
+        "degree": "B.Tech in Computer Science",
+        "institute": "VIT University",
+        "year": "2022",
+        "grade": "8.7 CGPA"
+      }
+    ],
+    "desired_roles": [
+      "Frontend Developer",
+      "Full Stack Developer",
+      "React Developer"
+    ],
+    "availability": "Immediate",
+    "completion": 85,
+    "profile_completed": true,
+    "shortlisted_by": [],
+    "created_at": "2026-03-29T11:41:43.183Z"
+  }
+]

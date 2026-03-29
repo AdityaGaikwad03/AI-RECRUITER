@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "email": "hire-me@anshumat.org",
+    "password": "$2b$10$wPYK1CuV55eh032FjwTPz./EGGwtfFVtvjE.onvW.9gVEY8YQi002",
+    "role": "candidate",
+    "name": "Alex Morgan",
+    "created_at": "2026-03-29T11:41:43.180Z"
+  },
+  {
+    "id": 2,
+    "email": "recruiter@demo.com",
+    "password": "$2b$10$HInIA685UdoiA1GS83RRsO4m/h.QVt22DK.qlVx.1eKCGQMEflIFq",
+    "role": "recruiter",
+    "name": "Sarah Chen",
+    "created_at": "2026-03-29T11:41:43.254Z"
+  }
+]

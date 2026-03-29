@@ -7,7 +7,6 @@ import Onboarding from "./pages/Onboarding";
 import ProfileBuilder from "./pages/ProfileBuilder";
 import ProfilePreview from "./pages/ProfilePreview";
 import RecruiterDashboard from "./pages/RecruiterDashboard";
-import CompareCandidates from "./pages/CompareCandidates";
 import CandidateProfile from "./pages/CandidateProfile";
 import Navbar from "./components/Navbar";
 
@@ -104,15 +103,6 @@ function AppRoutes() {
         }
       />
       <Route
-        path="/recruiter/compare"
-        element={
-          <RequireAuth role="recruiter">
-            <Navbar />
-            <CompareCandidates />
-          </RequireAuth>
-        }
-      />
-      <Route
         path="/recruiter/candidate/:id"
         element={
           <RequireAuth role="recruiter">
@@ -121,6 +111,7 @@ function AppRoutes() {
           </RequireAuth>
         }
       />
+      <Route path="/profile/:id" element={<ProfilePreview />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
