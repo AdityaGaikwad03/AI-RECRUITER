@@ -1,5 +1,8 @@
 import axios from 'axios';
-const API = axios.create({ baseURL: '/api', headers: { 'Content-Type': 'application/json' } });
+const API = axios.create({
+  baseURL: 'http://localhost:5000/api',
+  headers: { 'Content-Type': 'application/json' }
+});
 API.interceptors.request.use(c => { const t = localStorage.getItem('hiresmart_token'); if (t) c.headers.Authorization = `Bearer ${t}`; return c; });
 
 // Auth

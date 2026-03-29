@@ -22,4 +22,16 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal server error' });
 });
 
-app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
+const server = app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
+
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.error(`❌ Port ${PORT} is already in use. Please stop the existing process or set PORT in .env to a free port.`);
+    console.error('You can find and kill the process with:');
+    console.error('  netstat -ano | findstr :' + PORT);
+    console.error('  taskkill /PID <pid> /F');
+    process.exit(1);
+  }
+  console.error('Unhandled server error:', err);
+  process.exit(1);
+});
